@@ -219,10 +219,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_l,		tagmon,		{.i = +1 } },
 
 
-	{ MODKEY,			XK_Left,	shiftview,	{ .i = -1 } },
-	{ MODKEY|ShiftMask,		XK_Left,	shifttag,	{ .i = -1 } },
-	{ MODKEY,			XK_Right,	shiftview,	{ .i = 1 } },
-	{ MODKEY|ShiftMask,		XK_Right,	shifttag,	{ .i = 1 } },
+	{ MODKEY|ShiftMask,			XK_j,	shiftview,	{ .i = -1 } },
+	//{ MODKEY|ShiftMask,		XK_Left,	shifttag,	{ .i = -1 } },
+	{ MODKEY|ShiftMask,			XK_k,	shiftview,	{ .i = 1 } },
+	//{ MODKEY|ShiftMask,		XK_Right,	shifttag,	{ .i = 1 } },
 
 
 
