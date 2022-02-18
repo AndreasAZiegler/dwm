@@ -116,7 +116,7 @@ static const char *termcmd[]  = { TERMINAL, NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	STACKKEYS(MODKEY,                          focus)
-	STACKKEYS(MODKEY|ShiftMask,                push)
+	STACKKEYS(MODKEY|ControlMask,                push)
 	/* { MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("") }, */
 	{ MODKEY,			XK_grave,	spawn,	SHCMD("dmenuunicode") },
 	/* { MODKEY|ShiftMask,		XK_grave,	togglescratch,	SHCMD("") }, */
@@ -159,7 +159,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_space,	cyclelayout,		{.i = +1} },
 	{ MODKEY,			XK_o,		incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } },
-	{ MODKEY,			XK_p,			spawn,		SHCMD("mpc toggle") },
+	//{ MODKEY,			XK_p,			spawn,		SHCMD("mpc toggle") },
 	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("xscreensaver-command --lock") },
 	{ MODKEY,			XK_bracketleft,		spawn,		SHCMD("mpc seek -10") },
 	{ MODKEY|ShiftMask,		XK_bracketleft,		spawn,		SHCMD("mpc seek -60") },
@@ -172,7 +172,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          {.v = dmenucmd } },
+	{ MODKEY,			XK_p,		spawn,          {.v = dmenucmd } },
 	/* { MODKEY,			XK_d,		spawn,		SHCMD("") } }, */
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
